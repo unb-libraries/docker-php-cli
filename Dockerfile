@@ -29,7 +29,7 @@ RUN apk --no-cache add \
 LABEL ca.unb.lib.generator="php" \
   ca.unb.lib.php.version="8.1" \
   org.label-schema.build-date=$BUILD_DATE \
-  org.label-schema.description="php-cli is the base php CLI image at UNB Libraries." \
+  org.label-schema.description="php-cli is the base php CLI application image at UNB Libraries." \
   org.label-schema.name="php-cli" \
   org.label-schema.url="https://github.com/unb-libraries/docker-php-cli" \
   org.label-schema.vcs-url="https://github.com/unb-libraries/docker-php-cli" \
