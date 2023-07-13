@@ -1,0 +1,17 @@
+dockworker:
+  version: '6'
+  application:
+    description: A lightweight extensible php-cli docker image, suitable for development or production deployments.
+    uri: https://github.com/unb-libraries/docker-php-cli
+    identifiers:
+      id: docker-php-cli
+      slug: docker-php-cli
+      short_slug: php-cli
+      uuid: 6000
+  workflows:
+    image:
+      name: ghcr.io/unb-libraries/php-cli
+    vcs:
+      type: github
+      owner: unb-libraries
+      name: docker-php-cli
