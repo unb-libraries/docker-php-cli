@@ -1,11 +1,11 @@
 FROM ghcr.io/unb-libraries/base:3.x
 
-ENV COMPOSER_INSTALL "composer install --prefer-dist --no-interaction --no-progress"
-ENV COMPOSER_MEMORY_LIMIT -1
-ENV COMPOSER_PATH /usr/local/bin
-ENV COMPOSER_EXIT_ON_PATCH_FAILURE 1
-ENV PHP_CONFD_DIR /etc/php81/conf.d
-ENV PHP_APP_INI_FILE $PHP_CONFD_DIR/zz_app.ini
+ENV COMPOSER_INSTALL="composer install --prefer-dist --no-interaction --no-progress"
+ENV COMPOSER_MEMORY_LIMIT="-1"
+ENV COMPOSER_PATH="/usr/local/bin"
+ENV COMPOSER_EXIT_ON_PATCH_FAILURE="1"
+ENV PHP_CONFD_DIR="/etc/php81/conf.d"
+ENV PHP_APP_INI_FILE="$PHP_CONFD_DIR/zz_app.ini"
 
 COPY ./build /build
 
